@@ -9,7 +9,7 @@ Pastikan memiliki Java. Jika belum, install di [sini](https://www.oracle.com/jav
 
 # Usage
 1. Clone repository `git clone https://github.com/FrancescoMichael/Tucil3_13522038.git`
-2. Pergi ke root directory project ini `cd Tucil3_13522038`
+2. Pergi ke directory src pada project ini `cd Tucil3_13522038/src`
 3. Jalankan perintah `javac WordLadder.java`
 4. Jalankan perintah `java WordLadder`
 
