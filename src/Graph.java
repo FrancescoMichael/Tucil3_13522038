@@ -1,14 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
 import java.util.ArrayList;
 
-/**
- *
- * @author FRANCESCO
- */
 abstract class Graph {
     protected int nodeVisited;
     protected ArrayList<String> word;

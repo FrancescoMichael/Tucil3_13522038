@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 import java.util.ArrayList;
 
-/**
- *
- * @author FRANCESCO
- */
 public class GBFS extends Graph {
     public GBFS(ArrayList<String> wordList) {
         super(wordList);
@@ -26,11 +18,12 @@ public class GBFS extends Graph {
                 return visited;
             }
             ArrayList<String> neighbors = getNeighbors(currentWord);
+
+            if (neighbors.isEmpty()) {
+                break; // No neighbors found, break out of the loop
+            }
             currentWord = neighbors.getFirst();
             int currentScore = heuristic(currentWord, end);
-//            for (String neighbor : neighbors) {
-//                if(currentScore > heuristic(neighbor, end)) {}
-//            }
             for(int i = 1; i < neighbors.size(); i++) {
                 if(currentScore > heuristic(neighbors.get(i), end)) {
                     currentScore = heuristic(neighbors.get(i), end);

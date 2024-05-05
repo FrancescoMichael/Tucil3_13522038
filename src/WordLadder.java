@@ -6,11 +6,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import javax.swing.table.DefaultTableModel;
 
-
-/**
- *
- * @author FRANCESCO
- */
 public class WordLadder extends javax.swing.JFrame {
     
     private ArrayList<String> wordList = new ArrayList<>();
@@ -25,7 +20,7 @@ public class WordLadder extends javax.swing.JFrame {
         
         setSize(1000, 600); 
         
-        loadWordListFromFile("data.txt");
+        loadWordListFromFile("dictionary.txt");
         
         tableModel = new DefaultTableModel();
 
@@ -419,6 +414,7 @@ public class WordLadder extends javax.swing.JFrame {
         DurationLabel.setVisible(true);
         NodeLabel.setVisible(true);
         if (ans == null) {
+            LengthLabel.setVisible(false);
             DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
             model.setRowCount(0);
             model.addRow(new Object[]{"No path"});

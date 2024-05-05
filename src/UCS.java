@@ -1,15 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-/**
- *
- * @author FRANCESCO
- */
 public class UCS extends Graph {
     public UCS(ArrayList<String> wordList) {
         super(wordList);
@@ -27,6 +19,7 @@ public class UCS extends Graph {
             String currentWord = currentNode.word;
 
             if (currentWord.equals(end)) {
+                visited.add(currentWord);
                 setNodeVisited(visited.size());
                 ArrayList<String> path = new ArrayList<>();
                 while (currentNode != null) {
