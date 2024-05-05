@@ -414,7 +414,6 @@ public class WordLadder extends javax.swing.JFrame {
         Duration duration = Duration.between(startTime, endTime);
         long milliseconds = duration.toMillis();
 
-        LengthLabel.setText("The length is " + ans.size());
         DurationLabel.setText("The duration is " + milliseconds + " milliseconds");
         NodeLabel.setText("Visited " + nodeVisited + " Nodes");
         DurationLabel.setVisible(true);
@@ -425,6 +424,7 @@ public class WordLadder extends javax.swing.JFrame {
             model.addRow(new Object[]{"No path"});
             TableAnswer.setVisible(true);
         } else {
+            LengthLabel.setText("The length is " + ans.size());
             TableAnswer.setVisible(true);
             LengthLabel.setVisible(true);
             DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
