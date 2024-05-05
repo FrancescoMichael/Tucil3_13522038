@@ -1,6 +1,3 @@
-smirs
-smits
-empts
 a
 aa
 aaa
