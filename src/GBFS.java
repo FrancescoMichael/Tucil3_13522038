@@ -20,7 +20,7 @@ public class GBFS extends Graph {
             ArrayList<String> neighbors = getNeighbors(currentWord);
 
             if (neighbors.isEmpty()) {
-                break; // No neighbors found, break out of the loop
+                break;
             }
             currentWord = neighbors.getFirst();
             int currentScore = heuristic(currentWord, end);
